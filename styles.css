@@ -139,57 +139,15 @@ nav a:hover {
 /* Page Header */
 .page-header {
   background-color: #eaeaea;
-  padding: 60px 20px;
+  /*padding: 60px 20px;*/
   text-align: center;
 }
 
 .page-header h1 {
-  font-size: 32px;
+  font-size: clamp(24px, 5vw, 48px);
   margin: 0;
   color: #222;
 }
-
-/* Product Page */
-
-.product-card {
-  display: inline-block;
-  width: 300px;
-}
-
-.product-card img {
-  width: 300px;
-  height: auto;
-}
-
-.paypal-button {
-  width: 100px;
-  height: 50px;
-}
-
-/* Link and text */
-.product-card h4 {
-  font-size: 16px;
-
-}
-
-.product-card p {
-  font-weight: bold;
-  color: #333;
-} 
-
-/* Inline Gallery */
-.inline-gallery {
-  display: flex;
-  gap: 4px;
-  margin: 10px 0;
-}
-
-.inline-gallery img {
-  width: 48%;
-  border-radius: 4px;
-}
-
-
 
 /* Footer */
 footer {
@@ -198,14 +156,6 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #777;
-}
-
-/* Footer */
-footer {
-  background-color: #f3f3f3;
-  padding: 40px 20px 20px;
-  font-size: 14px;
-  color: #333;
 }
 
 .footer-grid {
