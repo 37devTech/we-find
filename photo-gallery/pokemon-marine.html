@@ -61,23 +61,16 @@
         line-height: 1.5;
       }
 
-      .buy-button {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .buy-button img {
-        width: 200px;
-        cursor: pointer;
-      }
-
       footer {
         text-align: center;
         font-size: 14px;
         color: #777;
         margin-top: 40px;
       }
-    </style>
+    </style><script 
+  src="https://www.paypal.com/sdk/js?client-id=BAArrMNTe7rQevh1DkI0WrUALmzgOYY1H6dBLAG45LEVsxKtgtRcLFEuKlw0ofBb5VlpAQ_EVUrLGomDfc&components=hosted-buttons&disable-funding=venmo&currency=JPY">
+</script>
+
   </head>
   <body>
     <div class="product-container">
@@ -103,27 +96,13 @@
           alt="Product 4"
         />
       </div>
-
-      <section class="product-details">
-        <h2>Product Details</h2>
-        <p><strong>Category:</strong> Cards and Collectibles</p>
-        <p><strong>Condition:</strong>New/Factory Sealed</p>
-        <p>
-          <strong>Description:</strong> Japanese Marnie's Morpeko & Grimmsnarl
-          ex Starter Set ex Pokemon Box
-        </p>
-        <p><strong>Game:</strong>Pokémon TCG</p>
-        <p><strong>Language:</strong>Japanese</p>
-        <p><strong>Price:</strong> ¥8,500</p>
-      </section>
-
-      <div class="buy-button">
-        <a href="#"
-          ><img src="../assets/paypal-button.png" alt="Buy Now with PayPal"
-        /></a>
-      </div>
-    </div>
-
+      
+      <div id="paypal-container-C49YJ3PW2NWW4"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "C49YJ3PW2NWW4",
+  }).render("#paypal-container-C49YJ3PW2NWW4")
+</script>
     <footer>&copy; 2025 WeFind Japan. All Rights Reserved.</footer>
   </body>
 </html>

@@ -78,6 +78,7 @@
         margin-top: 40px;
       }
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAArrMNTe7rQevh1DkI0WrUALmzgOYY1H6dBLAG45LEVsxKtgtRcLFEuKlw0ofBb5VlpAQ_EVUrLGomDfc&components=hosted-buttons&disable-funding=venmo&currency=JPY"></script>
   </head>
   <body>
     <div class="product-container">
@@ -112,27 +113,14 @@
         />
       </div>
 
-      <section class="product-details">
-        <h2>Product Details</h2>
-        <p><strong>Category:</strong> Vintage / Antiques</p>
-        <p><strong>Condition:</strong> Excellent - no visible damage</p>
-        <p>
-          <strong>Description:</strong> The Minolta Semi P is a vintage medium
-          format folding camera, prized for its compact design and beautiful
-          6x4.5cm images. Built in the late 1940s, it features a fixed lens and
-          manual controls, offering a fully hands-on shooting experience.
-          Perfect for collectors or film enthusiasts, the Semi P combines
-          classic craftsmanship with the charm of early postwar photography.
-        </p>
-        <p><strong>Film size:</strong>75mm</p>
-        <p><strong>Price:</strong> ¥17,500</p>
-      </section>
-
-      <div class="buy-button">
-        <a href="#"
-          ><img src="../assets/paypal-button.png" alt="Buy Now with PayPal"
-        /></a>
-      </div>
+      <div id="paypal-container-D4C3NVMAWX8B2"></div>
+      <script>
+        paypal
+          .HostedButtons({
+            hostedButtonId: "D4C3NVMAWX8B2",
+          })
+          .render("#paypal-container-D4C3NVMAWX8B2");
+      </script>
     </div>
 
     <footer>&copy; 2025 WeFind Japan. All Rights Reserved.</footer>

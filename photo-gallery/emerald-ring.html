@@ -85,16 +85,6 @@
         }
       }
 
-      .buy-button {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .buy-button img {
-        width: 200px;
-        cursor: pointer;
-      }
-
       footer {
         text-align: center;
         font-size: 14px;
@@ -102,6 +92,7 @@
         margin-top: 40px;
       }
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAArrMNTe7rQevh1DkI0WrUALmzgOYY1H6dBLAG45LEVsxKtgtRcLFEuKlw0ofBb5VlpAQ_EVUrLGomDfc&components=hosted-buttons&disable-funding=venmo&currency=JPY"></script>
   </head>
   <body>
     <div class="product-container">
@@ -123,62 +114,22 @@
           alt="Product 3"
         />
       </div>
-
-      <section class="product-details">
-        <h2>Product Details</h2>
-        <p><strong>Category:</strong>Accessories</p>
-        <p><strong>Condition:</strong>New</p>
-        <p>
-          <strong>Description:</strong> This luxurious ring is a beautiful
-          combination of gold and platinum, designed to highlight the stunning
-          emerald at its center. The emerald is surrounded by sparkling
-          diamonds, enhancing its vibrant green hue and creating a captivating,
-          elegant look. The band is crafted from high-quality gold, with
-          platinum accents around the emerald to create a sophisticated
-          contrast.
+      <br />
+      <div>
+        <p style="color: red">
+          *This is a Special Order Product. Please read
+          <a href="../shipping-and-returns.html">here</a> before ordering.
         </p>
-        <p>
-          Each piece is handmade by a skilled Japanese jeweler, ensuring that
-          every detail of this ring is crafted with precision and care. This
-          unique and refined design is perfect for those seeking a statement
-          piece that combines luxury and artistry.
-        </p>
-        <p><strong>Size:</strong></p>
-        <div class="size-chart">
-          <p><strong>Japanese Scale (JCS):</strong> 12</p>
-          <p><strong>US Scale:</strong> 6</p>
-          <p><strong>Inner Circumference (mm):</strong> 52.36</p>
-          <p><strong>Inner Circumference (inches):</strong> 2.06</p>
-          <p><strong>Diameter (mm):</strong> 16.67</p>
-          <p><strong>Diameter (inches):</strong> 0.66</p>
-        </div>
-        <div class="product-info">
-          <h2>Important Information</h2>
-          <p>
-            <strong>Shipping & Insurance:</strong> Due to the high value of this
-            product, it will be insured and shipped through FedEx to ensure safe
-            and secure delivery.
-          </p>
-          <p>
-            <strong>Certificate of Authenticity:</strong> Upon purchase, the
-            product will be sent with a certificate of authenticity, verifying
-            its quality and origin.
-          </p>
-          <p>
-            <strong>Refund & Sizing Policy:</strong> This product cannot be
-            refunded, and sizing adjustments cannot be made after the purchase
-            is confirmed.
-          </p>
-        </div>
-
-        <p><strong>Price:</strong>￥750,000</p>
-      </section>
-
-      <div class="buy-button">
-        <a href="#"
-          ><img src="../assets/paypal-button.png" alt="Buy Now with PayPal"
-        /></a>
       </div>
+      <br />
+      <div id="paypal-container-KUKTQYFW6KHWU"></div>
+      <script>
+        paypal
+          .HostedButtons({
+            hostedButtonId: "KUKTQYFW6KHWU",
+          })
+          .render("#paypal-container-KUKTQYFW6KHWU");
+      </script>
     </div>
 
     <footer>&copy; 2025 WeFind Japan. All Rights Reserved.</footer>

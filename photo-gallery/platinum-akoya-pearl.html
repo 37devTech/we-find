@@ -101,13 +101,13 @@
         margin-top: 40px;
       }
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAArrMNTe7rQevh1DkI0WrUALmzgOYY1H6dBLAG45LEVsxKtgtRcLFEuKlw0ofBb5VlpAQ_EVUrLGomDfc&components=hosted-buttons&disable-funding=venmo&currency=JPY"></script>
   </head>
   <body>
     <div class="product-container">
       <div class="product-header">
         <h1>Handmade Platinum Akoya Pear Ring</h1>
       </div>
-
       <div class="gallery">
         <img
           src="../assets/images/clothing-and-accessories/IMG_4939.jpg"
@@ -130,60 +130,22 @@
           alt="Product 4"
         />
       </div>
-
-      <section class="product-details">
-        <h2>Product Details</h2>
-        <p><strong>Category:</strong>Accessories</p>
-        <p><strong>Condition:</strong>New</p>
-        <p>
-          <strong>Description:</strong> This exquisite platinum ring features a
-          lustrous Akoya pearl at its center, offering a timeless and
-          sophisticated design. Handcrafted by a skilled jeweler in Japan, each
-          detail reflects the artistry and meticulous craftsmanship that Japan
-          is renowned for. The rich shine of the Akoya pearl is perfectly
-          complemented by the high-quality platinum band, making this ring a
-          truly elegant addition to any jewelry collection.
+      <br />
+      <div>
+        <p style="color: red">
+          *This is a Special Order Product. Please read
+          <a href="../shipping-and-returns.html">here</a> before ordering.
         </p>
-        <p>
-          Perfect for special occasions or as a standout piece for daily wear,
-          this handmade masterpiece is a symbol of both luxury and tradition.
-        </p>
-        <p><strong>Size:</strong></p>
-        <div class="size-chart">
-          <p><strong>Japanese Scale (JCS):</strong> 13</p>
-          <p><strong>US Scale:</strong> 6 1/2</p>
-          <p><strong>Inner Circumference (mm):</strong> 53.41</p>
-          <p><strong>Inner Circumference (inches):</strong> 2.10</p>
-          <p><strong>Diameter (mm):</strong> 17.00</p>
-          <p><strong>Diameter (inches):</strong> 0.67</p>
-        </div>
-        <div class="product-info">
-          <h2>Important Information</h2>
-          <p>
-            <strong>Shipping & Insurance:</strong> Due to the high value of this
-            product, it will be insured and shipped through FedEx to ensure safe
-            and secure delivery.
-          </p>
-          <p>
-            <strong>Certificate of Authenticity:</strong> Upon purchase, the
-            product will be sent with a certificate of authenticity, verifying
-            its quality and origin.
-          </p>
-          <p>
-            <strong>Refund & Sizing Policy:</strong> This product cannot be
-            refunded, and sizing adjustments cannot be made after the purchase
-            is confirmed.
-          </p>
-        </div>
-
-        <p><strong>Price:</strong>￥450,000</p>
-      </section>
-
-      <div class="buy-button">
-        <a href="#"
-          ><img src="../assets/paypal-button.png" alt="Buy Now with PayPal"
-        /></a>
       </div>
+      <br />
+      <div id="paypal-container-LLPTVL4PAF6XW"></div>
+      <script>
+        paypal
+          .HostedButtons({
+            hostedButtonId: "LLPTVL4PAF6XW",
+          })
+          .render("#paypal-container-LLPTVL4PAF6XW");
+      </script>
     </div>
 
     <footer>&copy; 2025 WeFind Japan. All Rights Reserved.</footer>

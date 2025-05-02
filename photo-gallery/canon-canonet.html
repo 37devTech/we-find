@@ -78,6 +78,7 @@
         margin-top: 40px;
       }
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAArrMNTe7rQevh1DkI0WrUALmzgOYY1H6dBLAG45LEVsxKtgtRcLFEuKlw0ofBb5VlpAQ_EVUrLGomDfc&components=hosted-buttons&disable-funding=venmo&currency=JPY"></script>
   </head>
   <body>
     <div class="product-container">
@@ -123,28 +124,14 @@
           alt="Product 4"
         />
       </div>
-
-      <section class="product-details">
-        <h2>Product Details</h2>
-        <p><strong>Category:</strong> Vintage / Antiques</p>
-        <p><strong>Condition:</strong> Used</p>
-        <p>
-          <strong>Description:</strong> A compact and easy-to-use 35mm
-          rangefinder camera. Designed for everyday photography, it features a
-          sharp 40mm f/2.8 lens and automatic exposure control, making it
-          perfect for both beginners and enthusiasts. Its lightweight design and
-          classic style make the Canonet 28 a reliable companion for film lovers
-          looking for a vintage shooting experience.
-        </p>
-        <p><strong>Film size:</strong>35mm</p>
-        <p><strong>Price:</strong> ¥12,000</p>
-      </section>
-
-      <div class="buy-button">
-        <a href="#"
-          ><img src="../assets/paypal-button.png" alt="Buy Now with PayPal"
-        /></a>
-      </div>
+      <div id="paypal-container-SQ4NSYDU4F73L"></div>
+      <script>
+        paypal
+          .HostedButtons({
+            hostedButtonId: "SQ4NSYDU4F73L",
+          })
+          .render("#paypal-container-SQ4NSYDU4F73L");
+      </script>
     </div>
 
     <footer>&copy; 2025 WeFind Japan. All Rights Reserved.</footer>

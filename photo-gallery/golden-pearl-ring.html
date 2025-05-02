@@ -84,16 +84,6 @@
         }
       }
 
-      .buy-button {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .buy-button img {
-        width: 200px;
-        cursor: pointer;
-      }
-
       footer {
         text-align: center;
         font-size: 14px;
@@ -101,6 +91,7 @@
         margin-top: 40px;
       }
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAArrMNTe7rQevh1DkI0WrUALmzgOYY1H6dBLAG45LEVsxKtgtRcLFEuKlw0ofBb5VlpAQ_EVUrLGomDfc&components=hosted-buttons&disable-funding=venmo&currency=JPY"></script>
   </head>
   <body>
     <div class="product-container">
@@ -126,61 +117,22 @@
           alt="Product 3"
         />
       </div>
-
-      <section class="product-details">
-        <h2>Product Details</h2>
-        <p><strong>Category:</strong>Accessories</p>
-        <p><strong>Condition:</strong>New</p>
-        <p>
-          <strong>Description:</strong> This stunning gold ring features a
-          lustrous pearl at its center, surrounded by a band encrusted with
-          sparkling diamonds. The luxurious gold setting enhances the natural
-          beauty of the pearl, while the diamonds add a touch of glamour and
-          sophistication. The elegant, swirling design of the band further
-          elevates this ring, making it an eye-catching and timeless piece.
+      <br />
+      <div>
+        <p style="color: red">
+          *This is a Special Order Product. Please read
+          <a href="../shipping-and-returns.html">here</a> before ordering.
         </p>
-        <p>
-          Handcrafted by a skilled Japanese jeweler, this ring is a perfect
-          blend of classic beauty and modern design. Whether for a special
-          occasion or as a daily luxury, it promises to be a cherished addition
-          to any jewelry collection.
-        </p>
-        <p><strong>Size:</strong></p>
-        <div class="size-chart">
-          <p><strong>Japanese Scale (JCS):</strong> 11</p>
-          <p><strong>US Scale:</strong> 5 1/2</p>
-          <p><strong>Inner Circumference (mm):</strong> 51.31</p>
-          <p><strong>Inner Circumference (inches):</strong> 2.02</p>
-          <p><strong>Diameter (mm):</strong> 16.33</p>
-          <p><strong>Diameter (inches):</strong> 0.64</p>
-        </div>
-        <div class="product-info">
-          <h2>Important Information</h2>
-          <p>
-            <strong>Shipping & Insurance:</strong> Due to the high value of this
-            product, it will be insured and shipped through FedEx to ensure safe
-            and secure delivery.
-          </p>
-          <p>
-            <strong>Certificate of Authenticity:</strong> Upon purchase, the
-            product will be sent with a certificate of authenticity, verifying
-            its quality and origin.
-          </p>
-          <p>
-            <strong>Refund & Sizing Policy:</strong> This product cannot be
-            refunded, and sizing adjustments cannot be made after the purchase
-            is confirmed.
-          </p>
-        </div>
-
-        <p><strong>Price:</strong>￥390,000</p>
-      </section>
-
-      <div class="buy-button">
-        <a href="#"
-          ><img src="../assets/paypal-button.png" alt="Buy Now with PayPal"
-        /></a>
       </div>
+      <br />
+      <div id="paypal-container-VSFNLQDQ72PPE"></div>
+      <script>
+        paypal
+          .HostedButtons({
+            hostedButtonId: "VSFNLQDQ72PPE",
+          })
+          .render("#paypal-container-VSFNLQDQ72PPE");
+      </script>
     </div>
 
     <footer>&copy; 2025 WeFind Japan. All Rights Reserved.</footer>
